@@ -1,0 +1,52 @@
+<?php /** * YouTube Video Slider and Popup By Video ID * */ $videoIDs = $block->getData('videoID'); $videoIDArry = explode(",", $videoIDs); $videoIDData = implode(',', array_map(function($val){return sprintf("'%s'", $val);}, $videoIDArry)); ?> <div class="video-grid-section owl-carousel owl-theme"></div><script type="text/javascript">
+    require([
+        'jquery',
+        'RLTSquare_YouTubeVideoSliderPopup/js/video-popup'
+    ], function ($) {
+        var thumbID = [<?= $videoIDData; ?>];
+        for(var i = 0; i < thumbID.length; i++) {
+
+            let selector = ".video-title-"+i;
+            var url = 'https://www.youtube.com/watch?v=' + thumbID[i];
+            $( ".video-grid-section" ).append( '<div class="js-video-button item" data-video-id="' + thumbID[i] + '"><span class="video-thumb"><img src="https://i.ytimg.com/vi/' + thumbID[i] + '/maxresdefault.jpg"></span><span class="video-title-'+i+'"></span>' );
+            $.getJSON('https://noembed.com/embed',{format: 'json', url: url}, function (data) {
+                $( selector ).append( '<h2>'+data.title+'</h2>' );
+            });
+        }
+
+        $(".js-video-button").modalVideo({
+            youtube:{controls:0,nocookie: true}
+        });
+
+        $(document).ready(function() {
+            $(".video-grid-section").owlCarousel({
+                items : 4,
+                itemsDesktop : [1199,3],
+                itemsDesktopSmall : [979,3],
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navRewind: true,
+                animateIn: "fadeIn",
+                animateOut: "fadeOut",
+                loop: true,
+                lazyLoad: true,
+                responsive: {
+                    0: {
+                        items:1
+                    },
+                    480: {
+                        items:2
+                    },
+                    768: {
+                        items:3
+                    },
+                    1200: {
+                        items:4
+                    }
+                }
+            });
+        });
+    });</script>

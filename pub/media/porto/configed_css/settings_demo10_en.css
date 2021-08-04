@@ -1,0 +1,209 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 03:14:21 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 57.17%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 40.83%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 42.8775%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 30.6225%;
+    }
+}
+
+@media (max-width: 575px){
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+@media (min-width: 1440px) {
+.container,.layout-fullwidth .container,.layout-fullwidth .container, .layout-fullwidth .block.category.event, .layout-fullwidth .footer.content, .layout-fullwidth .header.content, .layout-fullwidth .navigation, .layout-fullwidth .page-main, .layout-fullwidth .page-wrapper>.breadcrumbs >ul, .layout-fullwidth .page-wrapper>.page-bottom, .layout-fullwidth .page-wrapper>.widget, .layout-fullwidth .top-container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins,sans-serif;
+    color: #222529;
+    letter-spacing: normal;
+}
+h1{ 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 0 32px 0;
+}
+h2 { 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 32px 0;
+}
+h3 { 
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+}
+h4 { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 14px 0;
+}
+h6 { 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 14px 0; 
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ff7272;
+}
+html .action.primary, html .btn {
+    font-family: Poppins;
+    letter-spacing: 0;
+    font-weight: 700;
+    line-height: 1.42857;
+    padding: .8em 2em;
+    border-radius: 0;
+}
+html .action.primary {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+}
+html .btn-modern {
+    font-size: .8125rem;
+    padding: 1em 2.8em;
+    text-transform: uppercase;
+    height: auto;
+} 
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: 1rem;
+} 
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+} 
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+html .background-color-secondary {
+    background-color: #ff7272!important;
+}
+.page-header .sw-megamenu.navigation li.level0 > em, .page-header .sw-megamenu.navigation li.level0 i {
+    display: none;
+}
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}
+.widget .widgettitle {
+    font-size: 1rem;
+    letter-spacing: -.02em;
+}  
+
+.footer, .footer p {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.footer-middle {
+    font-family: Poppins,sans-serif; 
+}
+.footer-middle .widget {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+} 
+.footer-middle > .container { 
+    padding-top: 2.25rem;
+    padding-bottom: 0;
+}
+.footer-middle .widget:first-child {
+    margin-top: 0;
+}
+.footer .widgettitle, .footer .widget-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.widget:first-child {
+    margin-top: 0;
+}
+.footer .contact-info .contact-details strong {
+    line-height: 1;
+    color: #000; 
+}
+.footer .follow-us .share-links a {
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+}
+.footer .follow-us .share-links a:not(:hover) {
+    background: #f4f4f4;
+    color: #222529;
+}
+.footer-middle > .container::after { 
+    left: 40px; 
+    right: 40px;
+    border-color: #e7e7e7;
+}
+.footer .newsletter input {
+    height: 44px;
+    color: #777;
+    background: #f4f4f4;
+    font-size: .8125rem;
+    border-radius: 2rem 0 0 2rem;
+    padding-left: 1.25rem;
+}
+.footer .newsletter .action.subscribe {
+    font-size: .8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0 2rem 2rem 0;
+    padding: 0 1.5rem;
+    height: 44px;
+}
+.footer-bottom { 
+    padding-bottom: 3rem;
+    font-size: 12px;
+} 
+.toolbar-products { 
+    background: #f4f4f4;
+    padding: 12px 2px 2px 12px;
+    margin-bottom: 20px;
+    margin-right: 0;
+} 
+.products.wrapper ~ .toolbar { 
+    background: none;
+    padding: 0;
+    padding-top: 25px;
+}

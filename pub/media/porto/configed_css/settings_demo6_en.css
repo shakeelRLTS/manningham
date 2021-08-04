@@ -1,0 +1,247 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 03:14:21 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 49%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 49%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 36.75%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 36.75%;
+    }
+}
+
+.layout-fullwidth .container, .layout-fullwidth .block.category.event,.layout-fullwidth .footer.content,.layout-fullwidth .header.content,.layout-fullwidth .navigation,.layout-fullwidth .page-main,.layout-fullwidth .page-wrapper>.breadcrumbs >ul,.layout-fullwidth .page-wrapper>.page-bottom,.layout-fullwidth .page-wrapper>.widget,.layout-fullwidth .top-container{
+    padding-left: 4vw;padding-right: 4vw;
+}
+@media (max-width: 575px){
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins,sans-serif;
+    color: #222529;
+    letter-spacing: normal;
+}
+h1 { 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px; 
+    margin: 0 0 32px 0;
+}
+h2 { 
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px; 
+    margin: 0 0 32px 0;
+}
+h3 { 
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px; 
+    margin: 0 0 20px 0;
+}
+h4 { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px; 
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px; 
+    margin: 0 0 14px 0;
+}
+h6 { 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    margin: 0 0 14px 0;
+}
+p { 
+    letter-spacing: 0;
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ff7272;
+}
+html .action.primary, html .btn {  
+    padding: .533rem .933rem;
+    font-size: .8rem;
+    line-height: 1.42857; 
+}
+html .action.primary {
+    color: #fff;
+    background-color: #ff7272;
+    border-color: #ff7272 #ff7272 #ff3f3f;
+}
+html .btn-modern {
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: .75rem 1.5rem;
+    font-weight: 600;
+    height: auto;
+}
+html .btn-borders, html .btn-modern {
+    font-family: Poppins;
+    font-weight: 700;
+    letter-spacing: .01em;
+}
+.btn-borders.btn-xl {
+    padding: 1em 3.5em;
+    font-size: 1.125rem;
+    border-width: 3px;
+}
+.btn-modern.btn-md {
+    padding: .75em 2.25em;
+}
+.btn-modern.btn-xl {
+    padding: 1.15em 5.5em;
+}
+.btn-borders.btn-lg {
+    padding: 1em 3em;
+    font-size: 1rem;
+    border-width: 3px;
+}
+html .btn-borders.btn-dark {
+    background: transparent;
+    border-color: #222529;
+    color: #222529;
+}
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+}
+html .btn-borders.btn-dark:hover, 
+html .btn-borders.btn-dark:focus, 
+html .btn-borders.btn-dark:active {
+    background-color: #222529;
+    border-color: #222529;
+    color: #fff;
+}
+html .btn-primary {
+    color: #fff;
+    background-color: #ff7272;
+    border-color: #ff7272 #ff7272 #ff3f3f;
+}
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+html .background-color-secondary {
+    background-color: #ff7272!important;
+}
+.page-header .sw-megamenu.navigation li.level0 > em, .page-header .sw-megamenu.navigation li.level0 i {
+    display: none;
+}
+.page-header.type4 .navigation li.level0.staticwidth > .submenu li.level1 > a,
+.page-header.type4 .navigation li.level0.fullwidth > .submenu li.level1 > a {
+   color: #333;
+}
+.owl-carousel.dots-style-1 .owl-dots span {
+    width: 18px;
+    height: 18px;
+    border-color: #222529;
+  } 
+  .owl-carousel.dots-style-1 .owl-dot.active span, 
+  .owl-carousel.dots-style-1 .owl-dot:hover span {
+    color: #222529;
+  }
+  .owl-carousel.dots-style-1 .owl-dot span:after {
+    border-width: 4px!important;
+  } 
+.page-wrapper > .breadcrumbs { 
+    padding: 12px 0;
+}
+.page-wrapper > .breadcrumbs .items {
+    font-size: .75rem;
+    font-weight: 600;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.page-wrapper > .breadcrumbs .items>li.home a {
+    width: auto;
+    text-indent: 0;
+}
+.page-wrapper > .breadcrumbs .items>li.home a:after {display: none;}
+.footer .widget .widgettitle {
+    font-size: 1rem;
+    letter-spacing: -.02em;
+}  
+.footer .widget {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+}
+.widget:first-child {
+    margin-top: 0;
+}
+.footer, .footer p {
+    letter-spacing: 0;
+}
+.footer-middle > .container { 
+    padding-top: 5rem;
+    padding-bottom: 2.4rem;
+}
+.footer .widgettitle, .footer .widget-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer-middle .block { 
+    line-height: 1; 
+}
+.footer .follow-us .share-links a {
+    width: 48px;
+    height: 48px;
+    border-radius: 40px;
+    margin: 0;
+}
+.footer .newsletter input {
+    height: 3rem;
+    font-size: .875rem;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    box-shadow: none;
+    padding-left: 25px;
+}
+.footer .newsletter .action.subscribe {
+    height: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0 30px 30px 0;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: 700;
+}
+.widget.contact-info li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.footer .contact-info .contact-details strong {
+    text-transform: uppercase;
+}
+.footer .contact-info .contact-details strong, .footer .contact-info .contact-details span { 
+    line-height: 1.5; 
+}

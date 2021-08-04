@@ -1,0 +1,256 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 03:14:21 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 57.17%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 40.83%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 42.8775%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 30.6225%;
+    }
+}
+
+@media (max-width: 575px){
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins,sans-serif;
+    color: #222529;
+    letter-spacing: normal;
+}
+h1 { 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 0 32px 0;
+}
+h2 { 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 32px 0;
+}
+h3 { 
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+}
+h4 { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 14px 0;
+}
+h6 { 
+    font-family: Open Sans,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px; 
+}
+p { 
+    letter-spacing: 0;
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ee3d43;
+}
+html .heading-primary, html .lnk-primary, html .text-color-primary {
+    color: #e9846b;
+}
+
+html .btn-modern {
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: .75rem 1.5rem;
+    font-weight: 600;
+    height: auto;
+} 
+html .btn-sm {
+    padding: .3rem .65rem;
+    font-size: .75rem; 
+}
+html .btn-lg {
+    padding: .5rem .875rem;
+    font-size: .875rem; 
+}
+html .action.primary, html .btn {
+    font-family: Poppins;
+    letter-spacing: .01em;
+    font-weight: 700;
+    line-height: 1.42857;
+    padding: .8em 2em; 
+}
+html .action.primary, html .btn-primary {
+    color: #fff;
+    background-color: #e9846b;
+    border-color: #e9846b #e9846b #e3603f;
+}
+html .btn-xl {
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+.btn-modern.btn-xl {
+    font-size: 1rem;
+    padding: 1.25em 3.125em;
+}
+.btn-modern.btn-sm {
+    font-size: .7rem;
+    padding: .7rem 1.4rem;
+}
+html .btn-modern {
+    font-size: .8125rem;
+    padding: 1em 2.8em;
+}
+html .btn-sm { 
+    line-height: 1.5;
+}
+
+html .btn-lg { 
+    line-height: 1.3333;
+}
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: .75rem;
+} 
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+} 
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+html .btn-quaternary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000 #000 #000;
+}
+html .background-color-secondary {
+    background-color: #ee3d43 !important;
+}  
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}
+.page-header.type1 .main-panel-top {
+    border-bottom: 1px solid #e7e7e7;
+} 
+.page-header.type1 .header.panel > .header.links > li > a, .header.panel > .header.links > li.greet.welcome {
+    padding: 5px 10px; 
+    text-transform: capitalize;
+}
+.page-header.type1 .page-header .switcher:first-child .options .action.toggle { 
+    padding-left: 0;
+}
+.page-header.type1 .main-panel-top .panel.header+.gap {
+    background: #e7e7e7;
+}
+.page-header.type1 .header-main a.wishlist {
+    padding-right: 0 !important;
+}
+.block-search .action.search {
+    color: #606669;
+}
+.page-header.type1 .search-category { 
+    border-color: #fff;
+}
+.page-header.type1 .search-area .minisearch .actions button {
+    width: 43px;
+} 
+.page-header.type1 .header-contact .my-account { 
+    margin: 0 !important;
+    margin-right: 0.25rem !important;
+}
+@media (min-width: 992px) {
+.page-header.type1 .header.panel > .header.links > li.greet.welcome + .customer-welcome { 
+    padding: 7px 0px 7px 7px;
+}
+.page-header.type1:not(.sticky-header) .nav-sections {
+    background: none;
+}
+header.page-header.type1.sticky-header .nav-sections {
+    background-color: #222529;
+}
+.page-header.type1 .navigation:not(.side-megamenu) > ul {
+    justify-content: center;
+}
+.page-header.type1 .navigation:not(.side-megamenu) .level0 {
+    margin: 0 1px 0 0;
+}
+.page-header.type1 .navigation:not(.side-megamenu) .level0 .level-top { 
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -.35px;
+    padding: 20px;
+    text-transform: capitalize;
+} 
+.page-header.type1.sticky-header .cart-design-2 .action.showcart .minicart-icon {
+    border-color: #fff;
+}
+.page-header.type1.sticky-header .minicart-wrapper .action.showcart, .page-header.type1.sticky-header .minicart-wrapper .action.showcart:before, .page-header.type1.sticky-header .minicart-wrapper .action.showcart.active:before {
+    color:#fff;
+}
+}
+@media (max-width: 1219px) {
+.page-header.type1 .navigation:not(.side-megamenu) .level0 .level-top {
+    padding: 15px 15px 15px 15px;
+}
+}
+.page-wrapper > .breadcrumbs .items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.widget {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+}
+.widget:first-child {
+    margin-top: 0;
+}
+.widget .widgettitle {
+    font-size: 1em;
+    letter-spacing: 0;
+}  
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}  
+.block-category-list .block-title, .side-custom-block .custom-block h2 {
+    font-family: Poppins;
+}
+.footer .widgettitle, .footer .widget-title {
+    font-size: .9375rem;
+    font-weight: 700;
+}
+.footer, .footer p { 
+    line-height: 24px;
+    letter-spacing: 0;
+}

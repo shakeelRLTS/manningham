@@ -1,0 +1,224 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 03:14:21 */
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700italic,900,900italic');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 57.17%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 40.83%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 42.8775%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 30.6225%;
+    }
+}
+
+@media (max-width: 575px){
+html {
+    font-size: 14.8571px;
+}
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #222529;
+    letter-spacing: normal;
+}
+h2 {
+   font-family: Poppins,sans-serif; 
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 700;  
+    margin: 0 0 32px 0;
+}
+h3 {
+    font-family: Poppins,sans-serif; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+}
+h4 {
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 14px 0;
+}
+h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777;
+}
+p {
+    letter-spacing: 0;
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ff7272;
+}
+html .action.primary, html .btn {
+    font-family: Poppins;
+    letter-spacing: .01em;
+    font-weight: 600;
+    line-height: 1.42857;  
+    padding: .533rem .933rem;
+    font-size: .8rem; 
+}
+html .action.primary {
+    color: #fff;
+    background-color: #08c;
+    border-color: #08c #08c #069;
+}
+html .btn-modern {
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: .75rem 1.5rem;
+    font-weight: 600;
+    height: auto;
+} 
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+}
+html .btn-secondary {
+    color: #fff;
+    background-color: #ff7272;
+    border-color: #ff7272 #ff7272 #ff3f3f;
+}
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+.btn-modern.btn-lg {
+    font-size: .875rem;
+    padding: 1rem 2.25rem;
+    line-height: 1.3333;
+}
+.btn-md:not(.btn-modern) {
+    font-size: .8571em;
+    font-weight: 700;
+    height: auto;
+}
+html .btn-quaternary {
+    color: #fff;
+    background-color: #0e0f11;
+    border-color: #0e0f11 #0e0f11 #000;
+}
+html .background-color-secondary {
+    background-color: #ff7272!important;
+}
+.ls-200, .ls-200>* {
+    letter-spacing: .2em;
+}
+.page-header .sw-megamenu.navigation li.level0 > em, .page-header .sw-megamenu.navigation li.level0 i {
+    display: none;
+}
+.page-header.type2 .sw-megamenu.navigation li.level0 .submenu a {
+    line-height: 18px;
+    font-weight: 600;
+}
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}
+.widget .widgettitle {
+    font-size: 1rem;
+    letter-spacing: -.02em;
+}
+.product-item-photo>a:not(.weltpixel-quickview):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.1);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.product-item-info:hover .product-item-photo>a:not(.weltpixel-quickview):before {
+    opacity:1;
+}
+.small-list.products-grid .product-items .product-item-info .product-item-photo:before {display: none;}
+.block-category-list .block-title, .side-custom-block .custom-block h2 {
+    font-family: Poppins;
+}
+.footer, .footer p {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+.footer .widgettitle, .footer .widget-title {
+    font-size: .9375rem;
+    font-weight: 600;
+}
+.footer .contact-info .widget-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer .widget+.widget {
+    margin-top: 15px;
+}
+.footer .widget {
+    margin-bottom: 15px;
+}
+.footer-middle .block.newsletter input {
+    background: #292c30;
+}
+.footer .follow-us .share-links a {
+    box-shadow: none;
+    font-size: 12px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid rgb(255,255,255,.06); 
+}
+.footer .footer-ribbon { 
+    padding-top: 9px;
+}
+.footer-ribbon span {line-height: inherit;}
+@media (min-width: 992px) {
+header.page-header.sticky-header .nav-sections {
+    background-color: rgba(0,136,204,1);
+}
+.page-header.sticky-header .navigation li.level0 {
+    color: #fff;
+}
+.page-header.sticky-header .navigation li.level0.active, .page-header.sticky-header .navigation li.level0:hover {
+    color: #bde1f5;
+}
+.page-header.sticky-header .cart-design-2 .action.showcart .minicart-icon {
+    border-color: #FFFFFF;
+}
+.page-header.sticky-header .minicart-wrapper .action.showcart { 
+    color:#fff;
+}
+}

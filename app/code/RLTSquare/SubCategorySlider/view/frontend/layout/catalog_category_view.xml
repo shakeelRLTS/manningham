@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="subcategory.slider" template="RLTSquare_SubCategorySlider::subCategorySlider.phtml" />
+        </referenceContainer>
+        <move element="page.main.title" destination="content" before="-"/>
+        <move element="subcategory.slider" destination="content" after="page.main.title"/>
+        <move element="category_desc_main_column" destination="content" after="-"/>
+
+    </body>
+</page>

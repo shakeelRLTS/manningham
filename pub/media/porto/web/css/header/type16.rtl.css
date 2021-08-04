@@ -1,0 +1,50 @@
+.page-header.type16 .main-panel-top {display: none;}
+.page-header .header-col > *, .page-header.type16 .header-contact > * {margin-right: .875rem;}
+.page-header .header-col > *:first-child, .page-header.type16 .header-contact > *:first-child {margin-right: 0;}
+.page-header.type16 .header-main .header-left {display: flex;align-items: center;}
+.page-header.type16 .header-contact {display: inline-flex;align-items: center;}
+.page-header.type16 .header-contact .wishlist {top: -1px;position: relative;}
+.page-header.type16 .header-contact .wishlist i {font-size: 28px;display: block;margin: 0;}
+.page-header.type16 .custom-block {display: flex;align-items: center;}
+.page-header.type16 .custom-block > * {margin-right: .875rem;}
+.page-header.type16 .custom-block > *:first-child {margin-right: 0;}
+.page-header.type16 .separator {height: 1.75em;border-right: 1px solid rgba(0,0,0,.04);border-color: rgba(0,0,0,.06);}
+.page-header.type16 .minicart-wrapper .action.showcart::after {display: none;}
+.page-header.type16 .minicart-wrapper .action.showcart {min-width: 32px; justify-content: center;}
+.page-header.type16 .minicart-wrapper .action.showcart .counter.qty {left: -5px;top: -4px;box-shadow: -1px 0 2px 1px rgb(0 0 0 / 30%);background-color: #ec7200;}
+
+@media (max-width:991px){
+  .page-header.type16 .header-main .header-left {flex: 1;}
+  .page-header.type16 .logo {margin-right: 0;}
+  .page-header.type16 .search-area {margin-right: auto;width: auto;}
+  .page-header.type16 .custom-block {display: none;}
+}
+@media (max-width: 575px) {
+.page-header.type16 .search-area .block.block-search {left: -93px;}
+}
+@media (min-width:992px) {
+.page-header.type16 .header-main .header-left, .page-header.type16 .header-main .header-right {padding-top: 25px;padding-bottom: 25px;}
+.page-header.type16 .header-main .header-left {flex: 1;}
+.page-header.type16 .header-main .header-right .separator {margin-right: 2em;margin-left: 1em;}
+.page-header.type16 .logo {margin-right: 0;margin-left: 1rem;min-width: 111px;}
+.page-header.type16 .block-search input {height: 48px;padding: 0 25px 0 0;font-style: italic;}
+.page-header.type16 .search-area .minisearch .actions button {width: 46px;height: 48px;color:#222529;padding-left: 6px;}
+.page-header.type16 .search-category {left: 46px !important;height: 48px;}
+.page-header.type16 .search-category:after {line-height: 48px;}
+.page-header.type16 .navigation:not(.side-megamenu) > ul {display: flex;;overflow-x: auto;overflow-y: hidden;margin-bottom: 20px;-webkit-overflow-scrolling: touch;}
+.page-header.type16.sticky-header .navigation:not(.side-megamenu) > ul {margin-bottom: 0;}
+.page-header.type16.sticky-header .nav-sections {background-color: transparent;box-shadow: none;}
+.page-header.type16 .navigation:not(.side-megamenu) .level0 {max-width: 9.999%;flex: 0 0 9.999%;margin: 0;}
+.page-header.type16 .navigation:not(.side-megamenu) .level0 .level-top {height: 100%;width: 100%;text-align: center;font-size: 13px;font-weight: 600;line-height: 16px;letter-spacing: -.13px;color: #fff;padding: 12px 16px 15px 16px;text-transform: capitalize;display: block;}
+.page-header.type16 .navigation:not(.side-megamenu) .level0 .level-top > em {display: block;margin: 0 auto 4px;font-size: 1.7em;line-height: 30px;letter-spacing: -.01em;}
+.page-header.type16 .navigation:not(.side-megamenu) .level0 .level-top > em.size-lg {font-size: 2.4em;}
+.page-header .sw-megamenu.navigation li.level0.staticwidth > .submenu .level1 > a,
+.page-header .sw-megamenu.navigation li.level0.fullwidth > .submenu .level1 > a {color: #333;}
+}
+@media (min-width: 992px) and (max-width: 1260px) {
+.page-header.type16 .navigation:not(.side-megamenu) > ul {border-bottom: 5px solid #403f3f;}
+.page-header.type16 .navigation:not(.side-megamenu) > ul::-webkit-scrollbar {height: 10px;}
+.page-header.type16 .navigation:not(.side-megamenu) > ul::-webkit-scrollbar-track {background: #323232;border-radius: 10px;margin: 8px;}
+.page-header.type16 .navigation:not(.side-megamenu) > ul::-webkit-scrollbar-thumb {background: #6c6a6a;border-radius: 10px;}
+.page-header.type16 .navigation:not(.side-megamenu) .level0 {max-width: 12.5%;flex: 0 0 12.5%;}
+}

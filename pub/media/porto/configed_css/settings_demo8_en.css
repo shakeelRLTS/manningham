@@ -1,0 +1,205 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 03:14:21 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 57.17%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 40.83%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 42.8775%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 30.6225%;
+    }
+}
+
+@media (max-width: 575px){
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+p { 
+    letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins,sans-serif;
+    color: #222529;
+    letter-spacing: normal;
+}
+h1 { 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px; 
+    margin: 0 0 32px 0;
+}
+h2 { 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1px; 
+    margin: 0 0 32px 0;
+}
+h3 { 
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+h4 { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 14px 0;
+}
+h6 { 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777;
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ff7272;
+}
+html .action.primary, html .btn { 
+    font-weight: 700; 
+    padding: .533rem .933rem;
+    font-size: .8rem;
+    line-height: 1.42857;
+}
+html .action.primary,html .btn-primary {
+    color: #fff;
+    background-color: #e13b3f;
+    border-color: #e13b3f #e13b3f #cb1f24;
+}
+html .btn-lg {
+    padding: .5rem .875rem;
+    font-size: .875rem;
+    line-height: 1.3333;
+}
+html .btn-modern {
+    font-weight: 700;
+    letter-spacing: .01em;
+   font-size: .75rem;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    height: auto;
+}
+.btn-modern.btn-lg {
+    font-size: .9375rem;
+    padding: 1.05em 2.8em;
+}
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: .75rem;
+} 
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #0b0c0e;
+} 
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+html .background-color-secondary {
+    background-color: #ff7272!important;
+}
+@media (min-width: 992px){
+.page-header.type6 .navigation .level0 .level-top { 
+    font-family: 'Poppins';
+}
+} 
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}
+.widget .widgettitle {
+    font-size: 1rem;
+    letter-spacing: -.02em;
+}
+.product-item-name a { 
+    font-family: 'Poppins';
+    font-size: .9375rem;
+    font-weight: 400;
+}
+.product-item-photo>a:not(.weltpixel-quickview):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.1);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.product-item-info:hover .product-item-photo>a:not(.weltpixel-quickview):before {
+    opacity:1;
+}
+.small-list.products-grid .product-items .product-item-info .product-item-photo:before {display: none;}
+.footer, .footer p { 
+    letter-spacing: 0;
+}
+.footer .widgettitle, .footer .widget-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer .newsletter input { 
+    height: 3rem;
+    background: #292c30;
+    padding-left: 20px;
+}
+.footer .newsletter .action.subscribe { 
+    height: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: inherit;
+}
+.footer .widget {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+}
+.footer .widget:first-child {
+    margin-top: 0;
+}
+.footer .follow-us {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.footer .follow-us .share-links a {
+    width: 2.25rem;
+    height: 2.25rem; 
+}
+.footer li { 
+    line-height: 2em;
+}
+.footer .contact-info .contact-details strong { 
+    text-transform: uppercase;
+}
+.footer .contact-info .contact-details strong, .footer .contact-info .contact-details span { 
+    line-height: 20px;
+}

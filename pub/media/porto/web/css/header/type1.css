@@ -1,0 +1,44 @@
+.page-header.type1 .header-contact {
+  display: inline-flex;
+  align-items: center;
+  line-height: 22px;
+  font-size: .9em;
+}
+.page-header.type1 .header-contact .my-account {
+    display: inline-block;
+    padding: 0 .125rem;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.page-header.type1 .header-contact .my-account i,.page-header.type1 .header-contact .wishlist i {
+    font-size: 27px;
+    display: block;
+}
+.page-header.type1 .header-contact p {margin: 0;}
+.page-header.type1 .search-area .minisearch .actions button {width: 46px;}
+.page-header.type1 .search-category {right: 46px !important;}
+@media (max-width:991px){
+  .page-header.type1 .minicart-wrapper {
+    margin-left: .3125rem;
+  }
+  .page-header.type1 .custom-block {display: none;}
+}
+@media only screen and (max-width:767px){
+}
+@media (min-width:992px) {
+.page-header.type1 .search-area .block.block-search {border: none;}
+.page-header.type1.sticky-header .navigation {display: flex;align-items: center;}
+.page-header.type1 .sticky-logo {margin-top: 0;}
+.page-header.type1 .navigation:not(.side-megamenu) > ul {display: flex;align-items: center;flex-wrap: wrap;}
+.page-header.type1 .navigation:not(.side-megamenu) .level0 .level-top {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: -.3px;
+    padding: 18px 0 18px 0;
+}
+.page-header .sw-megamenu.navigation li.level0.staticwidth > .submenu .level1 > a,
+.page-header .sw-megamenu.navigation li.level0.fullwidth > .submenu .level1 > a {
+    color: #333;
+}
+}

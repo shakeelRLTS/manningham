@@ -1,0 +1,59 @@
+.main-panel-top {border-bottom: 1px solid #e7e7e7;}
+.page-header.type6 .panel.wrapper {letter-spacing: .025em;min-height: 36px;}
+.page-header .gap {display: none;}
+.page-header.type6  .header-right > * {margin-right: .875rem;margin-left: 0;}
+.page-header .switcher .options .action.toggle {padding: 0;}
+.page-header.type6 .main-panel-top .panel.header+.gap {height: 1.6em;}
+.page-header.type6 .panel.header .switcher {margin-left: 0;margin-right: .875rem;}
+.page-header.type6 .panel.header .switcher:first-child {margin-right: 0;}
+.page-header.type6 .main-panel-top .share-links a {width: 30px;height: 30px;margin: 0 1px;display: inline-block;font-size: .8rem;}
+.page-header.type6 .main-panel-top .separator {height: 1.6em;border-right: 1px solid #e7e7e7;display: inline-block;vertical-align: middle;}
+.page-header.type6 .header-row .header-center {padding: 30px 15px;flex: inherit;}
+.page-header.type6 .header-row >*:not(.header-center){flex: 1;}
+.page-header.type6 .header-row .header-left,.page-header.type6 .header-row .header-right {padding: 30px 0;}
+.page-header.type6 .porto-sicon-box {margin: 0 !important;}
+.page-header.type6 .header-contact i {margin: 0;}
+.page-header.type6 .header-contact > * {margin-right: .875rem;}
+.page-header.type6 .header-contact {display: inline-flex;align-items: center;line-height: 22px;font-size: .9em;}
+.page-header.type6 .header-contact .my-account {display: inline-block;padding: 0 .125rem;font-size: 24px;vertical-align: middle;}
+.page-header.type6 .header-contact .my-account i,.page-header.type6 .header-contact .wishlist i {font-size: 27px;display: block;margin: 0;}
+.page-header.type6 .header-contact p {margin: 0;}
+.minicart-wrapper .action.showcart .minicart-icon {font-size: 27px;}
+.minicart-wrapper .action.showcart .minicart-icon::before {margin: 0;-webkit-font-smoothing: auto;}
+.minicart-wrapper .block-minicart {border: 1px solid #f0f0f0;}
+.page-header.type6 .search-area {width: auto;}
+.page-header.type6 .search-area a.search-toggle-icon {width: 40px;height: 40px;line-height: 40px;font-size: 20.6px;}
+.page-header.type6 .search-area a.search-toggle-icon i::before {font-weight: 600;}
+.page-header.type6 .custom-block {margin-right: 0;}
+.page-header.type6 .search-area .minisearch .actions button {width: 38px;height: 35px;line-height: 35px;}
+.page-header.type6 .search-category {left: 41px !important;height: 37px;line-height: 37px;padding-left: 12px;padding-right: 16px;border-color: #fff;}
+.page-header.type6 .search-category:after {margin-right: 7px;}
+.page-header.type6 .block-search input {height: 37px;}
+@media (max-width:991px){
+  .page-header.type6 .header-row .header-left {display: none;}
+  .page-header.type6 .header-row .header-center {padding-left: 0;padding-right: 0;}
+  .page-header.type6 .minicart-wrapper {margin-right: .875rem;}
+  .page-header.type6 .custom-block {display: none;}
+}
+@media only screen and (max-width:767px){
+  .page-header.type6 .main-panel-top .separator {display: none;}
+}
+@media (min-width:992px){
+  header.page-header.sticky-header .nav-sections {padding-top: 4px;padding-bottom: 4px;}
+  .page-header.type6 {margin: 0 0 8px 0;}
+  .page-header.type6 .header.panel > .header.links {display: flex;align-items: center;}
+  .page-header.type6 .header.panel > .header.links > li > a {padding-top: 5px;padding-bottom: 5px;padding-left: 12px;padding-right: 12px;line-height: 26px;text-transform: none;}
+  .page-header.type6 .nav-sections {display: flex;align-items: center;}
+  .page-header.type6 .nav-sections .nav-sections-items {flex: 0 0 100%;}
+  .page-header.type6.sticky-header .navigation {display: flex;align-items: center;}
+  .page-header.type6 .sticky-logo {margin-top: 0;}
+  .page-header.type6 .navigation > ul {display: block;}
+  .page-header.type6.sticky-header .navigation > ul {padding-right: 60px;}
+  header.page-header.sticky-header .navigation li.level0 > a > span.cat-label {top: -4px;}
+  .page-header.type6 .navigation:not(.side-megamenu) .level0 {margin: 0 -3px 0 1px;}
+  .page-header.type6 .navigation:not(.side-megamenu) .level0:first-child {margin-right: 0;}
+  .page-header.type6 .navigation:not(.side-megamenu) .level0:first-child .level-top {padding-right: 0;}
+  .page-header.type6 .navigation:not(.side-megamenu) .level0 .level-top {font-size: 12px;font-weight: 700;line-height: 20px;letter-spacing:-.12px;padding: 8px 13px 8px 13px;}
+  .page-header .sw-megamenu.navigation li.level0.staticwidth > .submenu .level1 > a,
+  .page-header .sw-megamenu.navigation li.level0.fullwidth > .submenu .level1 > a {color: #333;}
+}

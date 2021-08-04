@@ -1,0 +1,71 @@
+<?php
+
+$smMenuHelper = $this->helper('Smartwave\Megamenu\Helper\Data');
+$catalogHelperData = $this->helper('Magento\Catalog\Helper\Data');
+$categoryObject = $catalogHelperData->getCategory();
+$subCatList = $categoryObject->getChildrenCategories();
+$subCatCount =  count($subCatList);
+?>
+
+    <div class="subcategory-slider-section">
+        <div class="subcategory-slider <?= ($subCatCount > 6 ? 'owl-carousel owl-theme' : '');?> ">
+            <?php foreach ($subCatList as $subcat) :
+                $cat_model = $smMenuHelper->getCategoryModel($subcat->getId());
+                $subCatImgPath =  $cat_model->getData('sw_menu_icon_img');
+                $siteUrl = rtrim($this->getUrl(), '/');
+                $subCatImageUrl = $siteUrl.$subCatImgPath;
+                ?>
+                <div class="item">
+                    <a href="<?= $subcat->getUrl(); ?>" title="<?= __($subcat->getName()); ?>">
+                        <img src="<?= $subCatImageUrl; ?>" alt="<?= __($subcat->getName()); ?>">
+                        <span><?= __($subcat->getName()); ?></span>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+<?php if($subCatCount > 6):  ?>
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+
+            $(document).ready(function() {
+                $(".subcategory-slider").owlCarousel({
+                    items : 6,
+                    itemsDesktop : [1199,4],
+                    itemsDesktopSmall : [979,3],
+                    autoplay: false,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    dots: false,
+                    nav: true,
+                    navRewind: true,
+                    animateIn: "fadeIn",
+                    animateOut: "fadeOut",
+                    loop: true,
+                    lazyLoad: true,
+                    responsive: {
+                        0: {
+                            items:2
+                        },
+                        480: {
+                            items:3
+                        },
+                        640: {
+                            items:4
+                        },
+                        768: {
+                            items:5
+                        },
+                        1200: {
+                            items:6
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php endif; ?>

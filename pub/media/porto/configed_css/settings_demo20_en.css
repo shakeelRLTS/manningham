@@ -1,0 +1,251 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2021-04-28 09:18:56 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main,.page-product-downloadable .product-options-bottom {
+        width: 57.17%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media,.page-product-downloadable .product-options-wrapper {
+        width: 40.83%;
+    }
+
+    .page-layout-1column .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-left .column.main > .custom-block ~ .product-info-main, .page-layout-2columns-right .column.main > .custom-block ~ .product-info-main, .page-layout-3columns .column.main > .custom-block ~ .product-info-main {
+        width: 42.8775%;
+    }
+    .page-layout-1column .column.main > .custom-block ~ .product.media, .page-layout-2columns-left .column.main > .custom-block ~ .product.media, .page-layout-2columns-right .column.main > .custom-block ~ .product.media, .page-layout-3columns .column.main > .custom-block ~ .product.media {
+        width: 30.6225%;
+    }
+}
+
+@media (max-width: 575px){
+body {
+    font-size: 13px;
+    line-height: 21px;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins,sans-serif;
+    color: #222529;
+    letter-spacing: normal;
+}
+h1 { 
+    font-family: Open Sans,sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0;
+    margin: 0 0 32px 0;
+}
+h2 { 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 32px 0;
+}
+h3 { 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    margin: 0 0 20px 0;
+}
+h4 { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin: 0 0 14px 0;
+}
+h5 { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin: 0 0 14px 0;
+}
+h6 { 
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin: 0 0 14px 0;
+}
+.home-banner-slider h2.vc_custom_heading, .custom-font4 {
+    font-family: 'Segoe Script','Savoye LET';
+}
+html .heading-secondary, html .lnk-secondary, html .text-color-secondary {
+    color: #ff7272;
+}
+html .btn-modern {
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: .75rem 1.5rem;
+    font-weight: 600;
+    height: auto;
+}
+html .action.primary, html .btn {
+    font-family: Poppins;
+    letter-spacing: .01em;
+    font-weight: 700;
+    line-height: 1.42857;
+    padding: .8em 2em; 
+}
+html .btn-modern {
+    font-size: .8125rem;
+    padding: 1em 2.8em;
+}
+html .action.primary {
+    color: #fff;
+    background-color: #c90;
+    border-color: #c90 #c90 #997300;
+}
+html .btn-xl {
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+.btn-modern.btn-xl {
+    font-size: 1rem;
+    padding: 1.25em 3.125em;
+}
+.btn-flat {
+    padding: 0!important;
+    background: none!important;
+    border: none!important;
+    border-bottom: 1px solid transparent!important;
+    box-shadow: none!important;
+    text-transform: uppercase;
+    font-size: .75rem;
+} 
+html .btn-dark {
+    color: #fff;
+    background-color: #222529;
+    border-color: #222529 #222529 #000;
+} 
+html .btn-light {
+    color: #222529;
+    background-color: #fff;
+    border-color: #fff #fff #e6e6e6;
+}
+html .btn-quaternary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000 #000 #000;
+}
+html .background-color-secondary {
+    background-color: #f4a085 !important;
+} 
+.widget, .sidebar-content .widget {margin-top: 1.5rem;margin-bottom: 1.5rem;}
+.widget .widgettitle {
+    font-size: 1rem;
+    letter-spacing: -.02em;
+} 
+html .background-color-secondary {
+    background-color: #ff7272!important;
+}
+.page-wrapper > .breadcrumbs { 
+    margin-bottom: 30px;
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase;
+    font-size: .625rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+}
+.page-wrapper > .breadcrumbs .items {
+    font-size: 10px;
+    font-weight: 700; 
+    position: relative;
+}
+.page-wrapper > .breadcrumbs .items:after {
+    border-bottom: 1px solid #e7e7e7;
+    left: 10px;
+    right: 10px; 
+    position: absolute;
+    content: '';
+    bottom: 0;
+}
+.page-wrapper > .breadcrumbs .items>li.home a {
+    width: auto;
+    text-indent: 0;
+}
+.page-wrapper > .breadcrumbs .items > li:not(:last-child)::after { 
+    content: "\f809"; 
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+}
+.page-wrapper > .breadcrumbs .items>li.home a:after {display: none;}
+.catalog-category-view .sidebar.sidebar-main .sidebar-content {
+    border: none;
+}
+.owl-carousel.show-nav-title .owl-nav { 
+    margin-top: -22px; 
+}
+.sidebar .sidebar-content .block-category-list, .side-custom-block .custom-block,.filter-options-item,.filter-actions {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+.filter-current {padding: 0;}
+.block-category-list .block-title, .side-custom-block .custom-block h2, .filter-options-title,.filter .filter-current-subtitle {
+    border-bottom: 2px solid #dfdfdf;
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 1;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.block-category-list .block-content,.filter-options-content,.filter-current .items,.filter-actions { 
+    padding-left: 10px;
+}
+.block-category-list .block-title {
+    padding-top: 0;
+}
+.block-category-list .block-content ol li a {
+    font-size: 12px;
+}
+.side-custom-block .custom-block:last-child {
+    margin-bottom: 0;
+}
+.side-custom-block .custom-block h5 {
+    margin-top: 0 !important;
+}
+.top-icon .porto-sicon-header {
+    margin-bottom: .75rem;
+}  
+.footer .widgettitle, .footer .widget-title {
+    font-size: .9375rem;
+    font-weight: 600;
+}
+.footer-top .custom-block:before,.footer-top .custom-block:after {
+    margin: 0;
+    border: 0;
+}
+.footer-top .widget:last-child {
+    margin-bottom: 0;
+}
+.footer-middle .widget_media_image img {
+    max-width: 111px;
+}
+.footer .footer-middle>.container {
+    padding-bottom: 0;
+    padding-top: 3rem;
+}
+.footer, .footer p {
+    font-family: Poppins,sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+.footer-middle>.container>.row {
+    align-items: center;
+}
+.footer-middle .widget {
+    margin-top: 0;
+}
+.footer {
+    background-color: #222529;
+    padding-bottom: 1.5rem;
+}

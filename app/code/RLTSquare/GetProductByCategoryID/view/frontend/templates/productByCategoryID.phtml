@@ -1,0 +1,36 @@
+<?php
+/**
+ * Category Product By Category ID
+ *
+ */
+
+$categoryID = $block->getData('categoryID');
+
+$abstractProductBlock = $block->getLayout()->createBlock('\Magento\Catalog\Block\Product\AbstractProduct');
+$categoryProducts = $block->getProductCollectionByCategory($categoryID);
+$categoryProductsCount = $block->getCategoryCountByID($categoryID);
+$categoryLink = $block->getCategoryLink($categoryID);
+
+?>
+<div class="category-count-section">
+    <p><?= __('There are '); ?><span><?= $categoryProductsCount; ?></span><?= __('products in this category'); ?></p>
+    <a href="<?= $categoryLink; ?>"><?= __('View All'); ?></a>
+</div>
+<div class="category-product-grid">
+    <ul>
+        <?php foreach ($categoryProducts as $product) :?>
+            <li class="product-item">
+                <div class="product-thumb">
+                    <a href="<?= $product->getProductUrl(); ?>">
+                        <img src="<?= $abstractProductBlock->getImage($product, 'category_page_grid')->getImageUrl() ?>" alt="<?= $product->getName(); ?>" />
+                    </a>
+                    <a href="<?= $product->getProductUrl(); ?>" class="add-cart-button"><i class="minicart-icon porto-icon-shopping-cart"></i></a>
+                </div>
+                <div class="product-content">
+                    <h2><a href="<?= $product->getProductUrl(); ?>"><?= $product->getName(); ?></a></h2>
+                    <span class="product-price"><?= $abstractProductBlock->getProductPrice($product); ?></span>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>

@@ -1,0 +1,71 @@
+.page-header.type17 .header-col > * {margin-left: .875rem;}
+.page-header.type17 .header-col > *:first-child {margin-left: 0;}
+.page-header.type17 .header-main .header-left,.page-header.type17 .header-main .header-right {flex: 1;}
+.page-header.type17 .header-main .header-center {flex: inherit;padding: 0 15px;}
+.page-header.type17 .logo {margin-left: 0;}
+.page-header.type17 .my-account {padding: 0 .125rem;}
+.page-header.type17 .my-account i,.page-header.type17 .wishlist i {
+  font-size: 27px;
+  display: block;
+}
+.page-header.type17 .main-panel-top {display: none;}
+.page-header.type17 .search-area {width: auto;}
+.page-header.type17 .search-area a.search-toggle-icon {font-size: 20.5px;width: 40px;top:1px;}
+.page-header.type17 .search-area a.search-toggle-icon i::before {font-weight: 600;}
+.page-header.type17 .search-area .minisearch .actions button {width: 46px;}
+.page-header.type17 .search-category {right: 46px !important;}
+.page-header.type17 .minicart-wrapper .action.showcart {min-width: 32px;justify-content: center;}
+.page-header.type17 .minicart-wrapper .action.showcart .minicart-icon {font-size: 27px;}
+.page-header.type17 .minicart-wrapper .action.showcart::after {display: none;}
+.page-header.type17 .minicart-wrapper .action.showcart .counter.qty {right: -5px;box-shadow: -1px 1px 2px 0 rgb(0 0 0 / 30%);}
+@media (max-width:991px){
+  .page-header.type17 .header-main .header-left {flex: inherit;min-width: auto;}
+  .page-header.type17 .header-main .header-center {padding: 0;}
+}
+@media only screen and (max-width:575px){
+  .page-header.type17 .my-account {display: none;}
+  .page-header.type17 .search-area a.search-toggle-icon { width: 30px; }
+  .page-header.type17 .search-area .block.block-search {right: -90px;}
+}
+@media (min-width:992px) {
+.page-header.type17 .header-main .header-left {padding: 0;text-align: left;}
+.page-header.type17 .header-main .header-right {padding: 22px 0;text-align: right;}
+.page-header.type17 .nav-sections {width: 100%;}
+.page-header.type17 .navigation:not(.side-megamenu) {padding: 0;position: static;}
+.page-header.type17 .navigation:not(.side-megamenu) > ul {display: flex;align-items: center;flex-wrap: wrap;position: static;}
+.page-header.type17 .navigation:not(.side-megamenu) .level0 {margin: 0 5px 0 0;}
+.page-header.type17 .navigation:not(.side-megamenu) .level0 .level-top {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  padding: 45px 10px 45px 10px;
+  text-transform: uppercase;
+}
+.page-header.type17 .navigation:not(.side-megamenu) .level0 .level-top::before {content: "";position: absolute;width: 100%;height: 3px;top: 0;left: 0;opacity: 0;}
+.page-header.type17 .navigation:not(.side-megamenu) .level0:hover .level-top::before {opacity: 1;}
+.page-header .sw-megamenu.navigation li.level0.staticwidth > .submenu .level1 > a,
+.page-header .sw-megamenu.navigation li.level0.fullwidth > .submenu .level1 > a {color: #333;}
+.page-header .sw-megamenu.navigation li.level0 .submenu .container {max-width: 100%;}
+.page-header.type17.sticky-header .header-main .header-left,.page-header.type17.sticky-header .header-main .header-right {padding: 0;}
+.page-header.type17 .navigation:not(.side-megamenu) .level0.parent .level-top::after {display: none;}
+.page-header.type17.sticky-header .logo {max-width: 100px;}
+.page-header.type17.sticky-header .logo img {
+  transform: scale(.8);
+  transform-origin: left center;
+}
+.page-header.type17.sticky-header .nav-sections {position: static !important; width: auto !important;box-shadow: none;}
+.page-header.type17.sticky-header .header-main {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 6%);
+}
+.page-header.type17.sticky-header .navigation:not(.side-megamenu) .level0 .level-top {padding-top: 30px;padding-bottom: 30px;}
+.page-header.type17.sticky-header .minicart-wrapper {position: static;transform: none;}
+}
+@media (min-width:992px) and (max-width: 1440px) {
+.page-header.type17 .navigation:not(.side-megamenu) .level0 .level-top {padding: 35px 7px 35px 7px;}
+}
