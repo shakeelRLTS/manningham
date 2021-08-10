@@ -152,6 +152,31 @@ class CreateCustomAttr implements DataPatchInterface {
             'unique' => false,
             'apply_to' => ''
         ]);
+
+        $eavSetup->addAttribute('catalog_product', 'product_specification', [
+            'group' => 'Specification',
+            'type' => 'text',
+            'backend' => '',
+            'frontend' => '',
+            'label' => 'Product Specification',
+            'input' => 'textarea',
+            'class' => '',
+            'source' => '',
+            'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
+            'wysiwyg_enabled' => true,
+            'is_html_allowed_on_front' => true,
+            'visible' => true,
+            'required' => false,
+            'user_defined' => false,
+            'default' => '',
+            'searchable' => false,
+            'filterable' => false,
+            'comparable' => false,
+            'visible_on_front' => false,
+            'used_in_product_listing' => true,
+            'unique' => false,
+            'apply_to' => ''
+        ]);
     }
 
     /**

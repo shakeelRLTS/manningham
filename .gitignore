@@ -1,0 +1,6 @@
+!/.gitlab*
+!/.gitignore
+!/composer.json
+!/composer.lock
+clean
+!/nginx.conf

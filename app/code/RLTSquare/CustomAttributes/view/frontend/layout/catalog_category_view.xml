@@ -8,7 +8,7 @@
             </action>
 
             <arguments>
-                <argument name="custome_attribute_val" xsi:type="object">RLTSquare\CustomAttributes\ViewModel\CustomAttributes</argument>
+                <argument name="custom_attribute_val" xsi:type="object">RLTSquare\CustomAttributes\ViewModel\CustomAttributes</argument>
             </arguments>
         </referenceBlock>
 
