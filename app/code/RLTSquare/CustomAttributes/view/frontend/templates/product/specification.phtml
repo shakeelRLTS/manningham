@@ -1,1 +1,10 @@
-<h2>Tab Content</h2>
+<?php
+/**
+ *
+ *
+ * @var $block \Magento\Catalog\Block\Product\ListProduct
+ */
+
+$product_specification = $block->getProduct();
+?>
+<?= $product_specification->getData('product_specification'); ?>
