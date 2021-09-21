@@ -190,6 +190,351 @@ body.catalog-product-view .product.media .gallery-placeholder .product-custom-ta
   font-size: 14px;
 }
 
+/* ============ Product page new style start =========== */
+.catalog-product-view.page-layout-1column {
+  .product-content-custom-section {
+    float: left;
+    width: 100%;
+  }
+  .product-content-custom-section .product.media {
+    width: calc(~'100% - 60%');
+    float: left;
+    padding-right: 10px;
+  }
+  .product-content-custom-section .product-info-main {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+
+    .page-title-wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .page-title-wrapper h1 {
+      font-size: 22px;
+      line-height: normal;
+      float: left;
+      width: 100%;
+    }
+
+    .page-title-wrapper h1 span.base {
+      float: left;
+      width: 100%;
+    }
+
+    .product.attribute.overview .key-features-section ul li label {
+      font-size: 14px;
+    }
+
+    .product.attribute.overview .key-features-section ul li span.data {
+      font-size: 14px;
+    }
+
+    .product.attribute.overview .key-features-section ul {
+      box-sizing: border-box;
+    }
+
+  }
+
+  .product-content-custom-section .product-info-custom-section {
+    float: left;
+    width: 30%;
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+
+
+    .product-info-stock-sku .stock.available span.label {
+      display: none;
+    }
+
+    .product-info-stock-sku .stock.available span {
+      background: #edf4ed;
+      color: #2fac66;
+      padding: 1px 6px 1px 8px;
+      position: relative;
+    }
+
+    .product-info-stock-sku .stock.available span::after {
+      border: 10px solid;
+      border-color: transparent transparent transparent #edf4ed;
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: 0;
+    }
+
+    .product-info-stock-sku {
+      float: left;
+    }
+
+    .product-info-stock-sku .configurable-variation-qty {
+      display: none !important;
+    }
+
+    .product-info-stock-sku .stock.available {
+      float: left;
+    }
+
+    .product.attribute.sku {
+      float: right;
+      width: 65%;
+    }
+
+    .product.attribute.sku strong.type {
+      float: left;
+      padding-right: 5px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .product.attribute.sku strong.type::after {
+      content: ': ';
+    }
+
+    .product.attribute.sku .value {
+      font-size: 12px;
+    }
+
+    .product-info-price {
+      float: left;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .product-info-price .price-box {
+      float: left;
+      width: 100%;
+    }
+
+    .product-info-price .price-box span.normal-price {
+      float: left;
+      font-size: 24px;
+      position: relative;
+      padding-top: 25px;
+      width: 50%;
+    }
+
+    .product-info-price .price-box span.old-price {
+      float: right;
+      font-size: 18px;
+      position: relative;
+      padding-top: 25px;
+      width: 50%;
+      margin: 0;
+      text-align: right;
+    }
+
+    .product-info-price .price-box span.normal-price::before {
+      content: 'Special Price';
+      position: absolute;
+      top: 0;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .product-info-price .price-box span.old-price::before {
+      content: 'Retail Price';
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .product-options-bottom .moved-add-to-links {
+      display: none;
+    }
+
+    .product-add-form .box-tocart {
+      border: medium none;
+    }
+
+    .product-add-form .box-tocart .actions {
+      margin-right: 0;
+      float: right;
+    }
+  }
+
+}
+
+body.catalog-product-view .product.info.detailed {
+  float: left;
+  width: 70%;
+  padding-right: 30px;
+}
+
+body.catalog-product-view .block.related {
+  float: left;
+  width: 30%;
+}
+
+body.catalog-product-view .block.related .owl-stage-outer .owl-stage {
+  width: 100% !important;
+}
+
+body.catalog-product-view .block.related .owl-stage-outer .owl-stage .owl-item {
+  width: 100% !important;
+}
+
+@media screen and (max-width:1199px){
+
+  .catalog-product-view.page-layout-1column .product-content-custom-section {
+    .product.media {
+      width: 34%;
+    }
+    .product-info-main {
+      width: 30%;
+    }
+    .product-info-custom-section {
+      width: 36%;
+      padding: 25px 15px;
+    }
+    .product-info-main .page-title-wrapper h1 {
+      font-size: 18px;
+    }
+    .product-info-main .product-reviews-summary {
+      margin-bottom: 0;
+      float: left;
+      width: 100%;
+    }
+
+    .product-info-main .product-reviews-summary:after {
+      margin: 10px 0;
+    }
+
+    .product-info-main .product.attribute.overview .key-features-section .key-features-title {
+      font-size: 14px;
+    }
+
+    .product-info-main .product.attribute.overview .key-features-section ul li label {
+      font-size: 12px;
+    }
+
+    .product-info-main .product.attribute.overview .key-features-section ul li span.data {
+      font-size: 12px;
+    }
+
+    .product-info-main .product.attribute.overview .key-features-section ul li {
+      margin-bottom: 5px;
+    }
+    .product-info-custom-section .product-info-price .price-box span.normal-price {
+      font-size: 21px;
+      padding-top: 20px;
+    }
+    .product-info-custom-section .product-info-price .price-box span.normal-price::before {
+      font-size: 14px;
+    }
+    .product-info-custom-section .product-info-price .price-box span.old-price {
+      font-size: 16px;
+      padding-top: 20px;
+    }
+    .product-info-custom-section .product-info-price .price-box span.old-price::before {
+      font-size: 13px;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .catalog-product-view.page-layout-1column .product-content-custom-section{
+    .product.media {
+      width: 50%;
+      padding-right: 30px;
+    }
+    .product-info-main {
+      width: 50%;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    .product-info-custom-section {
+      width: 50%;
+      padding: 0;
+      border: medium;
+    }
+
+    .product-info-main .product.overview {
+      display: none;
+    }
+
+  }
+
+  body.catalog-product-view .product.info.detailed {
+    width: 65%;
+  }
+
+  body.catalog-product-view .block.related {
+    width: 35%;
+  }
+
+  body.catalog-product-view.page-layout-1column .product-content-custom-section {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .catalog-product-view:not(.weltpixel-quickview-catalog-product-view):not(.weltpixel_quickview-catalog_product-view) .product.media {
+    padding-right: 20px !important;
+  }
+  .catalog-product-view.page-layout-1column .product-content-custom-section .product-info-custom-section .product.attribute.sku {
+    width: calc(~'100% - 95px');
+  }
+
+  body.catalog-product-view .product.info.detailed {
+    width: 100%;
+  }
+
+  body.catalog-product-view .block.related {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  body.catalog-product-view .small-list.products-grid .product-items .product-item-info {
+    width: 50%;
+    max-width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .catalog-product-view.page-layout-1column .product-content-custom-section{
+    .product.media {
+      width: 100%;
+      padding: 0 !important;
+    }
+    .product-info-main {
+      width: 100%;
+    }
+    .product-info-custom-section {
+      width: 100%;
+    }
+    .product-add-form {
+      float: left;
+      width: 100%;
+    }
+    .product-info-custom-section .product.attribute.sku .value {
+      float: left;
+      width: calc(~'100% - 35px');
+    }
+    .product-info-custom-section .product-info-stock-sku {
+      width: 100%;
+    }
+    .product-info-custom-section .product.attribute.sku {
+      width: calc(~'100% - 100px');
+    }
+  }
+
+  body.catalog-product-view .small-list.products-grid .product-items .product-item-info {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+  }
+}
+
+/* ============ Product page new style end =========== */
 
 /* ============== Responsive Style Start ============= */
 
