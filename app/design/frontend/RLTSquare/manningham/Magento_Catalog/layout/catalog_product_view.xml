@@ -19,6 +19,7 @@
         <!-- middle content area start -->
         <move element="product.info.review" destination="product.info.main" after="page.main.title" />
         <move element="product.info.overview" destination="product.info.main" after="product.info.review"/>
+
         <!-- middle content area end -->
 
         <!-- right content area start -->
@@ -26,8 +27,11 @@
         <move element="product.info.price" destination="product.info.custom.section" before="-" />
         <move element="product.info.extrahint" destination="product.info.custom.section" after="-"/>
         <move element="product.info" destination="product.info.custom.section" after="-" />
+        <move element="product.price.tier" destination="product.info.custom.section" before="product.info" />
+
         <!-- right content area end -->
 
+        <referenceBlock name="product.info.upsell" remove="true"/>
 
     </body>
 </page>

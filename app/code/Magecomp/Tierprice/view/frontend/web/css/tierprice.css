@@ -1,0 +1,52 @@
+
+
+#MAGECOMP_PriceView
+{border: 0 none;
+    color: #666;
+    float: right;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+	margin-bottom: 15px;
+}
+
+#MAGECOMP_PriceView > .table-heading
+{
+	background: #fcfcfc none repeat scroll 0 0;
+    border-bottom: 1px solid #faa86c;
+    border-top: 1px solid #eee;
+    color: #444;
+    font-size: 16px;
+    font-style: normal;
+    padding: 6px 12px 7px;
+    text-align: left;
+	
+}
+.table-alldata {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ece3e6;
+}
+.tablemain {
+  float: left;
+  width: 100%;
+}
+.tablemain td {
+  padding: 5px;
+  cursor: pointer;
+}
+#tiertable tr:first-child {
+  color: #444;
+  text-transform: uppercase;
+  cursor: none !important;
+}
+#tiertable tr:first-child > td {
+  cursor: text !important;
+   border-bottom: 1px solid #ece3e6;
+}
+.refresh-image {
+  float: right;
+  cursor:pointer;
+}
+
+ 

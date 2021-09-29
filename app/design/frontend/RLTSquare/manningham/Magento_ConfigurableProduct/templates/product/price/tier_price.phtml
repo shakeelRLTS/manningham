@@ -1,0 +1,57 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<div class="select-tire-price-box">
+    <script type="text/x-magento-template" id="tier-prices-template">
+        <div class="table-heading">Buy More, Save More!</div>
+        <table class="tierPriceTable">
+            <tbody>
+            <tr>
+                <td>Select</td>
+                <td>Quantity</td>
+                <td>Price per piece</td>
+            </tr>
+            <% var exclPrice = ' <span class="price-wrapper price-excluding-tax"'
+            + 'data-label="<?= $block->escapeHtml(__('Excl. Tax')) ?>">'
+            + '<span class="price">&nbsp;%1</span>'
+            + '</span>'
+            %>
+
+            <% _.each(tierPrices, function(item, key) { %>
+            <% var itemExclPrice = item.hasOwnProperty('excl_tax_price')
+            ? exclPrice.replace('%1', priceUtils.formatPrice(item['excl_tax_price'], currencyFormat))
+            : ''
+            %>
+
+            <% var priceStr = '<span class="price-container price-tier_price">'
+                        + '<span data-price-amount="' + priceUtils.formatPrice(item.price, currencyFormat) + '"'
+                        + ' data-price-type=""' + ' class="price-wrapper price-including-tax">'
+                        + '<span class="price">' + priceUtils.formatPrice(item.price, currencyFormat) + '</span>'
+                        + '</span>' + itemExclPrice + '</span>';
+            %>
+            <tr class="item">
+                <td>
+                    <input type="radio" name="tierPrice" value="<%= item.qty %>">
+                </td>
+                <td><%= '<?= $block->escapeHtml(__('%1')) ?>'.replace('%1', item.qty)%></td>
+                <td><%= '<?= $block->escapeHtml(__('%2')) ?>'.replace('%2', priceStr)%></td>
+            </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </script>
+    <div data-role="tier-price-block"></div>
+    <script type="text/javascript">
+        require(['jquery'],function($){
+            jQuery("body").delegate('input:radio','change',function(){
+                var qtyvalue = this.value;
+                $('input[name="qty"]').val(qtyvalue);
+                /*$("#product-addtocart-button").click();*/
+            });
+        });
+    </script>
+</div>
+
