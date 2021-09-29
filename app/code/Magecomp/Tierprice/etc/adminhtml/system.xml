@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <tab id="magecomp" translate="label" sortOrder="100" class="magecomp-logo">
+      <label><![CDATA[]]></label>
+    </tab>
+    <section id="tierprice" sortOrder="150" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+      <label>Tier Price</label>
+      <tab>magecomp</tab>
+      <resource>Magecomp_Tierprice::config_tierprice</resource>
+      <group id="general" translate="label" sortOrder="10" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+        <label>Configuration</label>
+        <field id="show" translate="label" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Show Tier Price in</label>
+          <source_model>Magecomp\Tierprice\Model\Tierpriceoption</source_model>
+        </field>
+		<field id="tiermessage" translate="label" sortOrder="20" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+          <label>Marekting Message</label>
+        </field>
+      </group>
+    </section>
+  </system>
+</config>

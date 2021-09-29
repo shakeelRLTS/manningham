@@ -1,0 +1,186 @@
+<?php
+/** @var \Magento\Catalog\Pricing\Render\PriceBox $block */
+
+/** @var \Magento\Catalog\Pricing\Price\TierPrice $tierPriceModel */
+
+$tierPriceModel = $block->getPrice();
+$tierPrices = $tierPriceModel->getTierPriceList();
+$msrpShowOnGesture = $block->getPriceType('msrp_price')->isShowPriceOnGesture();
+$product = $block->getSaleableItem();
+
+$tierpricehelper = $this->helper('Magecomp\Tierprice\Helper\Data');
+$prdprice = $product->getPrice();
+?>
+<?php if (count($tierPrices)) : ?>
+	<?php if($tierpricehelper->IsTierLabelDisplay()) : ?>
+	<h3><?php echo __($tierpricehelper->getMessageLabel());?></h3>
+    <?php endif; ?>
+    <ul class="<?php echo($block->hasListClass() ? $block->getListClass() : 'prices-tier items'); ?>" <?php if(!$tierpricehelper->IsTierLabelDisplay()) : ?> style="display:none;" <?php endif; ?>>
+    <?php foreach ($tierPrices as $index => $price) : ?>
+        <li class="item">
+            <?php
+                $popupId = 'msrp-popup-' . $product->getId() . $block->getRandomString(20);
+                if ($msrpShowOnGesture && $price['price']->getValue() < $product->getMsrp()):
+                    $addToCartUrl = '';
+                    if ($product->isSaleable()) {
+                        $addToCartUrl = $this->helper('\Magento\Checkout\Helper\Cart')
+                            ->getAddUrl($product, ['qty' => $price['price_qty']]);
+                    }
+                    $tierPriceData = [
+                        'addToCartUrl' => $addToCartUrl,
+                        'name' => $product->getName(),
+                        'price' => $block->renderAmount(
+                            $price['price'],
+                            [
+                                'price_id'          => $index,
+                                'id_suffix'         => '-' . $index,
+                                'include_container' => true
+                            ]
+                        ),
+                        'msrp' => $block->renderAmount(
+                            $block->getPriceType('msrp_price')->getAmount(),
+                            [
+                                'price_id'          => $index,
+                                'id_suffix'         => '-' . $index,
+                                'include_container' => true
+                            ]
+                        ),
+                    ];
+                    if ($block->getCanDisplayQty($product)) {
+                        $tierPriceData['qty'] = $price['price_qty'];
+                    }
+                ?>
+                <?php echo __('Buy %1 for: ', $price['price_qty']); ?>
+                <a href="#" id="<?php echo($popupId);?>"
+                   data-tier-price="<?php echo $block->escapeHtml($block->jsonEncode($tierPriceData)); ?>">
+                    <?php echo __('Click for price'); ?></a>
+                <?php else:
+                    $priceAmountBlock = $block->renderAmount(
+                        $price['price'],
+                        [
+                            'price_id'          => $index,
+                            'id_suffix'         => '-' . $index,
+                            'include_container' => true,
+                            'zone' => \Magento\Framework\Pricing\Render::ZONE_ITEM_OPTION
+                        ]
+                    );
+                ?>
+                <?php echo ($block->getShowDetailedPrice() !== false)
+                        ? __(
+                            'Buy %1 for %2 each and <strong class="benefit">save<span class="percent tier-%3">&nbsp;%4</span>%</strong>',
+                            $price['price_qty'],
+                            $priceAmountBlock,
+                            $index,
+                            $tierPriceModel->getSavePercent($price['price'])
+                        )
+                        : __('Buy %1 for %2 each', $price['price_qty'], $priceAmountBlock);
+                ?>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php if ($msrpShowOnGesture):?>
+        <script type="text/x-magento-init">
+            {
+                ".product-info-main": {
+                    "tierPrice": {
+                        "inputQty": "#qty",
+                        "productForm": "#product_addtocart_form"
+                    }
+                }
+            }
+        </script>
+    <?php endif;?>
+    
+    <!--Magecomp Customize code start here -->
+    <div class="select-price-box" id="MAGECOMP_PriceView" <?php if(!$tierpricehelper->IsTierDropdownDisplay()) : ?> style="display:none;" <?php endif; ?>>
+			<div class="table-heading">
+					<?php echo __($tierpricehelper->getMessageLabel());?>
+					<span class='refresh-image'><img src='<?php echo $block->getViewFileUrl('Magecomp_Tierprice::images/refresh.png'); ?>' alt='refresh image'/></span>
+		    </div>
+			<div class='table-alldata'>
+				<table class='tablemain' id='tiertable'>
+				       <tr>
+							<td>  <?php echo __('Select');?>	</td>
+							<td>  <?php echo __('Quantity');?>	</td>
+<!--							<td>  --><?php //echo __('Discount');?><!--	</td>-->
+							<td>  <?php echo __('Price per piece');?>	</td>
+						</tr>
+						<?php						
+							$tierprice = [];
+							foreach($tierPrices as $row)
+							{
+								$tierprice[] = $row['price_qty'];
+							}
+							$totalTierPrice = count($tierPrices);
+							$counter=0;
+							foreach($tierPrices as $index => $price)
+							{
+								$percentChange = (1 - $price['website_price'] / $prdprice) * 100;
+								$counter++; ?>
+							<tr class='<?php echo $price['price_qty'];?>'>
+								<td><input name="radio" id="tier_radio<?php echo $counter;?>" type="radio"></td>
+								<td>  <?php
+										if($counter == $totalTierPrice)
+											//echo __($price['price_qty'].'+');
+                                            echo __($price['price_qty']);
+										else
+											//echo __($price['price_qty'].'-'.($tierprice[$counter]-1));
+                                            echo __($price['price_qty']);
+
+                                        ?>
+								</td>
+<!--								<td>  --><?php //echo ceil($percentChange).'%';?><!--</td>-->
+								<td>  <?php echo $priceAmountBlock = $block->renderAmount(
+										  $price['price'],
+										  [
+											  'price_id'          => $index,
+											  'id_suffix'         => '-' . $index,
+											  'include_container' => true,
+											  'zone' => \Magento\Framework\Pricing\Render::ZONE_ITEM_OPTION
+										  ]
+									  ); ?>	</td>
+							</tr>
+						<?php } ?>
+				</table>
+			</div>
+    </div>
+    <script type="text/javascript">
+	require(['jquery', 'jquery/ui'], function($){ 
+	   jQuery(document).ready(function() {
+		   var oldRadio = 0;
+		   var qty = 1;
+		   var mainPrice = jQuery('.price-box > span > span').text();
+		   
+		   //table row click event
+			jQuery('#tiertable').find('tr').click( function()
+			{
+				if(jQuery(this).index()>0)
+				{
+					jQuery('#tiertable tr').css('border','none');
+					jQuery(this).css('border','1px solid #010084');
+					jQuery('#tier_radio'+oldRadio).removeAttr("checked");
+					jQuery('#tier_radio'+(jQuery(this).index())).prop( "checked", true );
+					oldRadio = jQuery(this).index();
+					var qty = jQuery(this).attr('class');
+					if(qty>0)
+					{
+						jQuery('#qty').val(qty);
+					}
+					var msg = jQuery(this).find('.price').text();
+					//set product price
+					jQuery("span.price-final_price > span.price-wrapper > span.price").text(msg);
+				}
+			});
+			
+			jQuery('.refresh-image').click(function(e){
+					jQuery("span.price-final_price > span.price-wrapper > span.price").text(mainPrice);
+					jQuery('#tiertable tr').css('border','none');
+					jQuery('#qty').val(qty);
+					jQuery('#tier_radio'+oldRadio).removeAttr("checked");
+			});
+		});
+	});
+    </script>
+    <!--Magecomp Customize code end here--> 
+<?php endif; ?>
