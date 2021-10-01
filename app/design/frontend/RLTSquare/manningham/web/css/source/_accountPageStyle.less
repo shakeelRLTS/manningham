@@ -1,0 +1,57 @@
+.block-collapsible-nav .item:first-child {
+  border: medium none;
+}
+
+.block-collapsible-nav .item {
+  border: medium none;
+}
+
+.account.page-layout-2columns-left{
+  .sidebar-main,
+  .sidebar-additional {
+    margin-top: 60px;
+  }
+
+  .sidebar-main .block-collapsible-nav .block-collapsible-nav-title {
+    border: medium none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sidebar-main .block-collapsible-nav .block-collapsible-nav-title::after {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: bold;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .account.page-layout-2columns-left {
+
+    .sidebar-main,
+    .sidebar-additional {
+      margin-top: 0;
+    }
+
+    .sidebar-main .block-collapsible-nav {
+      position: relative;
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .sidebar-additional .block-reorder {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-additional .block-reorder .actions-toolbar > .secondary {
+      text-align: left;
+    }
+
+    .sidebar-main .block-collapsible-nav .block-collapsible-nav-content {
+      border-bottom: 0;
+    }
+
+  }
+}
