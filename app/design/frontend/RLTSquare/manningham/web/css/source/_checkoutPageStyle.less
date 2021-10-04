@@ -1,0 +1,142 @@
+body.checkout-index-index {
+  .minicart-items{
+    .product-item-name {
+      white-space: initial;
+      width: 100%;
+      font-weight: 600;
+    }
+    .product-item-details {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    .product-item-details .subtotal > span {
+      float: left;
+      width: auto;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .product-item-details .subtotal > span span.price {
+      font-size: 14px;
+      font-weight: 600;
+      color: #222;
+    }
+    .product-item-details .product.options dt {
+      color: #fff;
+      float: left;
+      background-color: #010084;
+      padding: 2px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .product-item-details .product.options dd {
+      line-height: 29px;
+    }
+  }
+  .opc-block-summary {
+    .product-item .product-item-name-block {
+      width: 100%;
+      display: inline-block;
+    }
+    .product-item .subtotal {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  .checkout-payment-method {
+    .payment-method-content {
+      padding-left: 0;
+    }
+
+    .field-select-billing,
+    .billing-address-form {
+      max-width: 100%;
+    }
+    .payment-method-billing-address .checkout-billing-address .actions-toolbar {
+      float: left;
+      margin-top: 20px;
+    }
+    .payment-method-billing-address .checkout-billing-address .actions-toolbar button {
+      color: #fff;
+      background-color: #08c;
+      border-color: #08c;
+    }
+    .payment-method-billing-address .checkout-billing-address .actions-toolbar button:hover {
+      background-color: #010084;
+      border-color: #010084;
+    }
+    .payment-option._collapsible .payment-option-title {
+      padding-left: 0;
+    }
+    .payment-option-content {
+      padding: 0;
+    }
+  }
+  .opc-wrapper {
+    .form-login,
+    .form-shipping-address {
+      max-width: 100%;
+    }
+    .form-discount {
+      max-width: 100%;
+    }
+    .form-discount .control input#discount-code {
+      background-color: #ffffff;
+      color: #777;
+      border-color: rgba(0,0,0,.09);
+      border-radius: 0;
+      height: auto;
+      padding: 8px 12px;
+      font-size: .85rem;
+      font-family: inherit;
+      line-height: 32px;
+    }
+  }
+  .actions-toolbar {
+    > .primary .action:last-child,
+    > .secondary .action:last-child {
+      color: #fff;
+      background-color: #08c;
+      border-color: #08c;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    > .primary .action:last-child:hover,
+    > .secondary .action:last-child:hover {
+      color: #fff;
+      background-color: #010084;
+      border-color: #010084;
+    }
+  }
+
+  .block-authentication .block-title strong {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .block.block-customer-login form .actions-toolbar .secondary a.action.action-remind {
+    background-color: transparent;
+    color: #08c;
+    line-height: normal;
+  }
+
+  .block.block-customer-login form .actions-toolbar .secondary a.action.action-remind:hover {
+    color: #010084;
+  }
+}
+
+
+/* ========= Responsive Style Start ========== */
+
+@media screen and (max-width: 767px){
+  .checkout-payment-method .payment-methods {
+    margin: 0;
+  }
+
+  .checkout-payment-method .payment-option {
+    margin: 0;
+  }
+}
+
+
+/* ========= Responsive Style Start ========== */
