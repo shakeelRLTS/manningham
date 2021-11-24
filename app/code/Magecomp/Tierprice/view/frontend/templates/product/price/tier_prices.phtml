@@ -122,11 +122,11 @@ $prdprice = $product->getPrice();
 								<td><input name="radio" id="tier_radio<?php echo $counter;?>" type="radio"></td>
 								<td>  <?php
 										if($counter == $totalTierPrice)
-											//echo __($price['price_qty'].'+');
-                                            echo __($price['price_qty']);
+											echo __($price['price_qty'].'+');
+                                            //echo __($price['price_qty']);
 										else
-											//echo __($price['price_qty'].'-'.($tierprice[$counter]-1));
-                                            echo __($price['price_qty']);
+											echo __($price['price_qty'].' - '.($tierprice[$counter]-1));
+                                            //echo __($price['price_qty']);
 
                                         ?>
 								</td>
