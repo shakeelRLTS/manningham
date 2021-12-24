@@ -6,6 +6,7 @@
 namespace Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\Related;
 
 use Magento\Framework\Api\Filter;
+use Magento\Ui\DataProvider\AbstractDataProvider;
 
 /**
  * Class RelatedDataProvider
