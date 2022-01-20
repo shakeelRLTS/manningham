@@ -24,6 +24,6 @@
                 </arguments>
             </block>
         </referenceBlock>
-
+        <referenceBlock name="product.attributes" remove="true" />
     </body>
 </page>
