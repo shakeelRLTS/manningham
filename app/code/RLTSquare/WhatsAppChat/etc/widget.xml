@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+    <widget class="RLTSquare\WhatsAppChat\Block\Widget\WhatsApp" id="rltsquare_whatsapp_chat">
+        <label>WhatsApp Chat</label>
+        <description>WhatsApp Chat Button</description>
+    </widget>
+</widgets>

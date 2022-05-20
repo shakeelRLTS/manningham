@@ -1,0 +1,54 @@
+<?php $helper = $this->helper('RLTSquare\WhatsAppChat\Helper\Data'); ?>
+
+<?php if ($helper->getGeneralStatus()) : ?>
+    <div id="general-wachat">
+        <a href="https://web.whatsapp.com/send?phone=<?php echo $helper->getGeneralPhone(); ?>&amp;text=<?php echo $helper->getGeneralMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-web">
+            <img src="<?php echo $this->getViewFileUrl('RLTSquare_WhatsAppChat::images/button.png'); ?>" alt="WA button">
+            <span class="watsap-text">Chat on Watsap</span>
+        </a>
+
+        <a href="https://wa.me/<?php echo $helper->getGeneralPhone(); ?>?text=<?php echo $helper->getGeneralMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-mobile">
+            <img src="<?php echo $this->getViewFileUrl('RLTSquare_WhatsAppChat::images/button.png'); ?>" alt="WA button">
+            <span class="watsap-text">Chat on Watsap</span>
+        </a>
+    </div>
+
+    <style type="text/css">
+        @media(max-width: 767px) {
+            #general-wachat .btn-web{
+                display: none;
+            }
+        }
+        @media(min-width: 768px) {
+            #general-wachat .btn-mobile{
+                display: none;
+            }
+        }
+        #general-wachat a {
+            position: fixed;
+            z-index: 9999;
+            float: left !important;
+            bottom: 3%;
+            cursor: pointer;
+            min-width: 50px;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto 0 auto;
+            background: #20b038;
+            transition: All .5s ease;
+            left: 20px;
+            border-radius: 50px;
+        }
+
+        #general-wachat a img{
+            width: 50px;
+        }
+        .watsap-text{
+            color: white;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 36px;
+        }
+    </style>
+<?php endif; ?>
