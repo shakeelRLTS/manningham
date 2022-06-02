@@ -1,0 +1,7 @@
+<form id="import-form" class="admin__fieldset" action="<?php /* @escapeNotVerified */ echo $block->getUrl('rltimportexport/import/importcustomers') ?>" method="post" enctype="multipart/form-data">
+    <?php echo $block->getBlockHtml('formkey')?>
+    <input type="file" id="import_promotedproduct_file" name="import_promotedproduct_file" class="input-file required-entry _required"/>
+    <?php echo $block->getButtonHtml(__('Import Products'), '', 'import-submit') ?>
+    <button type="submit" class="primary action-default" style="display: block; margin-bottom: 20px" >Import by CSV</button>
+</form>
+

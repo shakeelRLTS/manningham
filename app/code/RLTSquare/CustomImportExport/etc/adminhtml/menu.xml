@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <update id="RLT_Square::rltsquare" title="RLT Square" module="Magento_Backend" sortOrder="300" resource="RLT_Square::rltsquare"/>
+        <add id="RLTSquare_CustomImportExport::rltsquare_main" title="Wordpress to Magento File Conversion" module="RLTSquare_CustomImportExport" sortOrder="10" parent="RLT_Square::rltsquare" resource="RLTSquare_CustomImportExport::rltsquare_main"/>
+        <add id="RLTSquare_CustomImportExport::importexport_main" title="Manage Import Export Products" parent="RLTSquare_CustomImportExport::rltsquare_main" module="RLTSquare_CustomImportExport" sortOrder="10" action="rltimportexport/import/index" resource="RLTSquare_CustomImportExport::importexport_main"/>
+        <add id="RLTSquare_CustomImportExport::importexport_customers" title="Manage Import Export Customers" parent="RLTSquare_CustomImportExport::rltsquare_main" module="RLTSquare_CustomImportExport" sortOrder="10" action="rltimportexport/import/customers" resource="RLTSquare_CustomImportExport::importexport_customers"/>
+        <add id="RLTSquare_CustomImportExport::importexport_customersaddress" title="Manage Import Export Customers Address" parent="RLTSquare_CustomImportExport::rltsquare_main" module="RLTSquare_CustomImportExport" sortOrder="10" action="rltimportexport/import/customersaddress" resource="RLTSquare_CustomImportExport::importexport_customersaddress"/>
+        <add id="RLTSquare_CustomImportExport::importexport_orders" title="Manage Import Export Orders" parent="RLTSquare_CustomImportExport::rltsquare_main" module="RLTSquare_CustomImportExport" sortOrder="10" action="rltimportexport/import/importorders" resource="RLTSquare_CustomImportExport::importexport_orders"/>
+    </menu>
+</config>

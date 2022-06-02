@@ -491,13 +491,13 @@ define([
                         optionPriceDiff = optionFinalPrice - finalPrice;
                         options[i].label = options[i].initialLabel;
 
-                        if (optionPriceDiff !== 0) {
-                            options[i].label += ' ' + priceUtils.formatPrice(
-                                optionPriceDiff,
-                                this.options.priceFormat,
-                                true
-                            );
-                        }
+                        // if (optionPriceDiff !== 0) {
+                        //     options[i].label += ' ' + priceUtils.formatPrice(
+                        //         optionPriceDiff,
+                        //         this.options.priceFormat,
+                        //         true
+                        //     );
+                        // }
                     }
 
                     if (allowedProducts.length > 0 || _.include(allowedOptions, options[i].id)) {

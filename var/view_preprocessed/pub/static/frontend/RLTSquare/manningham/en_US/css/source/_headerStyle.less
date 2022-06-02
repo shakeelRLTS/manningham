@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header.page-header.type2 {
   border-bottom: 0;
 
@@ -222,11 +226,20 @@ header.page-header.sticky-header .cart-design-2 .action.showcart .minicart-icon 
 }
 
 .block-minicart .block-content > .actions > .primary .action.primary {
-  background-color: #00a9e0;
+  background-color: #00a9e0 !important;
+}
+
+.page-wrapper > .breadcrumbs .items > li strong {
+  text-transform: none;
 }
 
 /* ============== Responsive Style Start ============= */
 
+@media screen and (min-width: 1200px){
+  .page-header .ui-menu-item.level0.fullwidth.parent {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 1199px){
   header.page-header.type2 .header-contact .custom-block .custom-html .porto-sicon-header p {
     font-size: 18px !important;
@@ -265,6 +278,11 @@ header.page-header.sticky-header .cart-design-2 .action.showcart .minicart-icon 
 
   header.page-header.type2 .header-row .header-left {
     margin-right: 30px;
+  }
+
+  header.page-header.type2 .header-row .header-left a.logo img {
+    max-height: initial;
+    width: 150px;
   }
 }
 
@@ -556,6 +574,21 @@ header.page-header.sticky-header .cart-design-2 .action.showcart .minicart-icon 
     font-size: 12px;
   }
 
+  header.page-header.type2 .header-contact .custom-block .custom-html .porto-sicon-header h3.porto-sicon-title {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+
+  header.page-header.type2 .header-row .header-left a.logo img {
+    max-height: initial;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width:767px){
+  header.page-header.type2 .header-row .header-left a.logo {
+    max-width: 120px;
+  }
 }
 
 @media screen and (max-width: 639px){
@@ -615,5 +648,12 @@ header.page-header.sticky-header .cart-design-2 .action.showcart .minicart-icon 
   .page-wrapper > .breadcrumbs .items {
     padding: 10px 20px;
   }
+
+  header.page-header.type2 .header-contact .custom-block .custom-html .porto-sicon-header h3.porto-sicon-title {
+    font-size: 16px !important;
+    line-height: 18px !important;
+  }
+
 }
+
 /* ============== Responsive Style End ============= */

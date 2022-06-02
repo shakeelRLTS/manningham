@@ -1,4 +1,4 @@
-<?php /** * YouTube Video Slider and Popup By Video ID * */ $videoIDs = $block->getData('videoID'); $videoIDArry = explode(",", $videoIDs); $videoIDData = implode(',', array_map(function($val){return sprintf("'%s'", $val);}, $videoIDArry)); ?> <div class="video-grid-section owl-carousel owl-theme"></div><script type="text/javascript">
+<?php /** * YouTube Video Slider and Popup By Video ID * */ $videoIDs = $block->getData('videoID'); $videoIDArry = explode(",", $videoIDs); $videoIDData = implode(',', array_map(function($val){return sprintf("'%s'", $val);}, $videoIDArry)); ?> <div id="ytvideos" class="video-grid-section owl-carousel owl-theme"></div><script type="text/javascript">
     require([
         'jquery',
         'RLTSquare_YouTubeVideoSliderPopup/js/video-popup'

@@ -9,7 +9,7 @@ $videoIDArry = explode(",", $videoIDs);
 $videoIDData = implode(',', array_map(function($val){return sprintf("'%s'", $val);}, $videoIDArry));
 ?>
 
-<div class="video-grid-section owl-carousel owl-theme"></div>
+<div id="ytvideos" class="video-grid-section owl-carousel owl-theme"></div>
 
 <script type="text/javascript">
     require([

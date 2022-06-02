@@ -19,7 +19,7 @@ return [
                 'host' => 'localhost',
                 'dbname' => 'manningham',
                 'username' => 'root',
-                'password' => 'root',
+                'password' => 'Admin@123',
                 'model' => 'mysql4',
                 'engine' => 'innodb',
                 'initStatements' => 'SET NAMES utf8;',
