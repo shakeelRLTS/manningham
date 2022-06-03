@@ -101,12 +101,12 @@
         "version_normalized": "1.1.8.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/allure-framework/allure-php-commons.git",
+            "url": "https://github.com/allure-framework/allure-php-api.git",
             "reference": "5ae2deac1c7e1b992cfa572167370de45bdd346d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/allure-framework/allure-php-commons/zipball/5ae2deac1c7e1b992cfa572167370de45bdd346d",
+            "url": "https://api.github.com/repos/allure-framework/allure-php-api/zipball/5ae2deac1c7e1b992cfa572167370de45bdd346d",
             "reference": "5ae2deac1c7e1b992cfa572167370de45bdd346d",
             "shasum": ""
         },
@@ -1843,7 +1843,8 @@
                 "email": "c_sharp@mail.ru"
             }
         ],
-        "description": "Guzzle6 transport for Vault PHP client"
+        "description": "Guzzle6 transport for Vault PHP client",
+        "abandoned": true
     },
     {
         "name": "dasprid/enum",
@@ -3041,7 +3042,8 @@
             "flex",
             "keyword",
             "library"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/console",
@@ -3119,7 +3121,8 @@
             "terminfo",
             "tput",
             "window"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/event",
@@ -3177,7 +3180,8 @@
             "library",
             "listener",
             "observer"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/exception",
@@ -3233,7 +3237,8 @@
         "keywords": [
             "exception",
             "library"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/file",
@@ -3297,7 +3302,8 @@
             "library",
             "link",
             "temporary"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/iterator",
@@ -3353,7 +3359,8 @@
         "keywords": [
             "iterator",
             "library"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/protocol",
@@ -3415,7 +3422,8 @@
             "resource",
             "stream",
             "wrapper"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/stream",
@@ -3481,7 +3489,8 @@
             "protocol",
             "stream",
             "wrapper"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "hoa/ustring",
@@ -3543,7 +3552,8 @@
             "search",
             "string",
             "unicode"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "jms/metadata",
@@ -6978,6 +6988,40 @@
                 "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
                 "type": "tidelift"
             }
+        ]
+    },
+    {
+        "name": "livechat/module-magento-livechat",
+        "version": "2.4.1",
+        "version_normalized": "2.4.1.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://repo.magento.com/archives/livechat/module-magento-livechat/livechat-module-magento-livechat-2.4.1.0.zip",
+            "shasum": "c158b8ef65a4c461898fa3792879b521017c3d92"
+        },
+        "require": {
+            "magento/framework": "100.*|101.*|102.*|103.*",
+            "magento/module-backend": "100.*|101.*|102.*",
+            "magento/module-checkout": "100.*",
+            "magento/module-config": "100.*|101.*",
+            "magento/module-customer": "100.*|101.*|102.*|103.*",
+            "magento/module-sales": "100.*|101.*|102.*|103.*",
+            "magento/module-store": "100.*|101.*",
+            "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
+        },
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "LiveChat\\LiveChat\\": ""
+            }
+        },
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
         ]
     },
     {
@@ -25796,7 +25840,8 @@
             }
         ],
         "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
-        "homepage": "https://github.com/theseer/fDOMDocument"
+        "homepage": "https://github.com/theseer/fDOMDocument",
+        "abandoned": true
     },
     {
         "name": "theseer/tokenizer",

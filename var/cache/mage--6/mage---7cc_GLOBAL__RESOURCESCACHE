@@ -1,2 +1,0 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1628002645;s:6:"expire";i:9999999999;s:4:"tags";s:19:"7cc_CONFIG,7cc_MAGE";}
-{"sales_setup":{"name":"sales_setup","extends":"core_setup"},"sales":{"name":"sales","extends":"core"}}

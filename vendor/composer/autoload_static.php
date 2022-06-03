@@ -487,6 +487,7 @@ class ComposerStaticInitcdfe64eecd53d9f87a404008cfdc134e
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'aa75ea0761a2f40c1f3b32ad314f86c4' => __DIR__ . '/..' . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
+        '7b569000c8b03f99440706fd6c6719fa' => __DIR__ . '/..' . '/livechat/module-magento-livechat/registration.php',
         '43a898c2b52882ecca1f7b0558d3af2c' => __DIR__ . '/..' . '/magento/composer-root-update-plugin/registration.php',
         'eda65932675b68b5aee4503e0762d64d' => __DIR__ . '/..' . '/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
@@ -921,6 +922,7 @@ class ComposerStaticInitcdfe64eecd53d9f87a404008cfdc134e
         ),
         'L' => 
         array (
+            'LiveChat\\LiveChat\\' => 18,
             'League\\MimeTypeDetection\\' => 25,
             'League\\ISO3166\\' => 15,
             'League\\Flysystem\\Cached\\' => 24,
@@ -2620,6 +2622,10 @@ class ComposerStaticInitcdfe64eecd53d9f87a404008cfdc134e
         'MFTF\\' => 
         array (
             0 => __DIR__ . '/..' . '/magento/magento2-functional-testing-framework/dev/tests/functional/tests/MFTF',
+        ),
+        'LiveChat\\LiveChat\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/livechat/module-magento-livechat',
         ),
         'League\\MimeTypeDetection\\' => 
         array (

@@ -21,4 +21,13 @@ class Interceptor extends \Dotdigitalgroup\Email\Console\Command\Provider\TaskPr
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getAvailableTasks');
         return $pluginInfo ? $this->___callPlugins('getAvailableTasks', func_get_args(), $pluginInfo) : parent::getAvailableTasks($additionalTasks);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __get($name)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, '__get');
+        return $pluginInfo ? $this->___callPlugins('__get', func_get_args(), $pluginInfo) : parent::__get($name);
+    }
 }

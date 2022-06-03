@@ -396,6 +396,7 @@ return array(
     'Magento\\' => array($baseDir . '/app/code/Magento'),
     'Magento2\\' => array($vendorDir . '/magento/magento-coding-standard/Magento2'),
     'MFTF\\' => array($vendorDir . '/magento/magento2-functional-testing-framework/dev/tests/functional/tests/MFTF'),
+    'LiveChat\\LiveChat\\' => array($vendorDir . '/livechat/module-magento-livechat'),
     'League\\MimeTypeDetection\\' => array($vendorDir . '/league/mime-type-detection/src'),
     'League\\ISO3166\\' => array($vendorDir . '/league/iso3166/src'),
     'League\\Flysystem\\Cached\\' => array($vendorDir . '/league/flysystem-cached-adapter/src'),
