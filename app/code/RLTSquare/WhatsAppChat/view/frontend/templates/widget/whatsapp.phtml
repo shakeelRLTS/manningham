@@ -1,0 +1,60 @@
+<?php $helper = $this->helper('RLTSquare\WhatsAppChat\Helper\Data');?>
+
+<?php if($helper->getStatus()): ?>
+    <div id="wachat">
+        <a href="https://web.whatsapp.com/send?phone=<?php echo $helper->getPhone(); ?>&amp;text=<?php echo $helper->getMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-web">
+            <img src="<?php echo $this->getViewFileUrl('RLTSquare_WhatsAppChat::images/button.png'); ?>" alt="WA button">Chat With Us
+        </a>
+
+        <a href="https://wa.me/<?php echo $helper->getPhone(); ?>?text=<?php echo $helper->getMessage(); ?>" onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_chat', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});" target="_blank" class="btn-mobile">
+            <img src="<?php echo $this->getViewFileUrl('RLTSquare_WhatsAppChat::images/button.png'); ?>" alt="WA button">Chat With Us
+        </a>
+    </div>
+
+    <style type="text/css">
+        @media(max-width: 767px) {
+            #wachat .btn-web{
+                display: none;
+            }
+
+            #wachat a {
+                width: 65% !important;
+                max-width: 225px !important;
+                min-width: 225px !important;
+            }
+        }
+        @media(min-width: 768px) {
+            #wachat .btn-mobile{
+                display: none;
+            }
+        }
+        #wachat a {
+            color: #fff;
+            background: green;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.8px;
+            display: inline-block;
+            border: 1px solid green;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            width: 100%;
+            margin-top: 2px;
+            max-width: 244px;
+            padding: 12px 20px;
+            min-width: 244px;
+        }
+        #wachat a:hover,
+        #wachat a:focus,
+        #wachat a:active {
+            color: green !important;
+            background: transparent;
+            border: 1px solid green;
+        }
+        #wachat a img{
+            width: 30px;
+            vertical-align: middle;
+            color: #fff;
+        }
+    </style>
+<?php endif; ?>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+ <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <whatsApp>
+            <general>
+                <general_status>0</general_status>
+                <general_phone>+921xxxxxxxxx</general_phone>
+                <general_message>Enter Default Message for general Whatsapp Chat</general_message>
+            </general>
+            <whatsapp_chat>
+                <status>0</status>
+                <phone_number>+923xxxxxxxxx</phone_number>
+                <message>Hello! I am interested in your product</message>
+            </whatsapp_chat>
+        </whatsApp>
+    </default>
+</config>
